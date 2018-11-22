@@ -16,3 +16,7 @@ path = "src/server/src/main.rs"
 [[bin]]
 name = "c"
 path = "src/concurrency/src/main.rs"
+
+[[bin]]
+name = "actix"
+path = "actix_app/src/main.rs"
