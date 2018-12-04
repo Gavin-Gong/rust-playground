@@ -34,6 +34,7 @@ fn json(_req: &HttpRequest) -> Result<HttpResponse> {
         .body(&json))
 }
 
+// TODO
 fn create(req: &HttpRequest) -> Box<Future<Item = HttpResponse, Error = Error>> {
     req.json()
         .from_err()
