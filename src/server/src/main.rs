@@ -4,11 +4,19 @@ use std::net::{TcpListener, TcpStream};
 use std::thread;
 use std::time::Duration;
 
+mod thread_pool;
+use thread_pool::ThreadPool;
+
 fn main() {
     let listener = TcpListener::bind("0.0.0.0:8890").unwrap();
+    let pool = ThreadPool::new(4);
     for stream in listener.incoming() {
+        println!("enter");
         let stream = stream.unwrap();
-        handle_connection(stream);
+        pool.execute(|| {
+            handle_connection(stream);
+            println!("resp");
+        })
     }
 }
 
