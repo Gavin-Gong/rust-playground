@@ -4,10 +4,10 @@ version = "0.1.0"
 authors = ["Gavin Gong <kefengong@gmail.com>"]
 
 [dependencies]
-rand = "0.5.5"
-hyper = "0.12"
-futures = "0.1"
-actix-web = "0.7"
+rand = "0.8.4"
+hyper = "0.14.12"
+futures= "0.3.16"
+actix-web = "3.3.2"
 
 [[bin]]
 name = "server"
@@ -20,3 +20,8 @@ path = "src/concurrency/src/main.rs"
 [[bin]]
 name = "actix"
 path = "actix_app/src/main.rs"
+
+
+[[bin]]
+name = "basic"
+path = "src/basic/src/main.rs"
