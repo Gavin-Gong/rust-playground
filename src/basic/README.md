@@ -9,7 +9,7 @@
 - [x] module system
 - [ ] packageer
 - [ ] function
-- [ ] flow control
+- [x] flow control
 - [ ] ownership
 - [ ] pattern matching
 - [ ] collections api
