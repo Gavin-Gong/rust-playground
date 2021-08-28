@@ -1,5 +1,6 @@
 mod flow;
 
 pub fn run() {
-    flow::greet();
+    flow::conditional_feat();
+    flow::loop_feat();
 }
