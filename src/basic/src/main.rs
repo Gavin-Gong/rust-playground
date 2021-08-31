@@ -1,3 +1,4 @@
+mod data_type;
 mod flow;
 mod module;
 mod util;
@@ -13,4 +14,5 @@ fn main() {
     util::greet();
     flow::run();
     var::run();
+    data_type::run();
 }

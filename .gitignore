@@ -13,3 +13,5 @@ Cargo.lock
 **/*.rs.bk
 cmake-build-debug
 .idea
+
+.DS_Store
