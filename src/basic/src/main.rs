@@ -1,6 +1,7 @@
 mod data_type;
 mod flow;
 mod module;
+mod ownership;
 mod util;
 mod var;
 
@@ -15,4 +16,5 @@ fn main() {
     flow::run();
     var::run();
     data_type::run();
+    ownership::run();
 }
