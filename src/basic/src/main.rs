@@ -4,6 +4,8 @@ mod module;
 mod ownership;
 mod util;
 mod var;
+mod char;
+mod testing;
 
 fn main() {
     module::foo::greet();
